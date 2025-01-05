@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c264c91c.css",
-    "main.js": "/static/js/main.badd0517.js",
-    "static/js/703.b0e218fd.chunk.js": "/static/js/703.b0e218fd.chunk.js",
-    "static/js/598.7c840cac.chunk.js": "/static/js/598.7c840cac.chunk.js",
-    "static/media/home_icon.png": "/static/media/home_icon.6505b68e71651f1268bf.png",
-    "static/media/profile_icon.png": "/static/media/profile_icon.c68e285d623b3772495b.png",
-    "index.html": "/index.html",
-    "main.c264c91c.css.map": "/static/css/main.c264c91c.css.map",
-    "main.badd0517.js.map": "/static/js/main.badd0517.js.map",
-    "703.b0e218fd.chunk.js.map": "/static/js/703.b0e218fd.chunk.js.map",
-    "598.7c840cac.chunk.js.map": "/static/js/598.7c840cac.chunk.js.map"
+    "main.css": "/deepaknetwork/wallet/static/css/main.c264c91c.css",
+    "main.js": "/deepaknetwork/wallet/static/js/main.8017f8b3.js",
+    "static/js/703.b0e218fd.chunk.js": "/deepaknetwork/wallet/static/js/703.b0e218fd.chunk.js",
+    "static/js/598.7c840cac.chunk.js": "/deepaknetwork/wallet/static/js/598.7c840cac.chunk.js",
+    "static/media/home_icon.png": "/deepaknetwork/wallet/static/media/home_icon.6505b68e71651f1268bf.png",
+    "static/media/profile_icon.png": "/deepaknetwork/wallet/static/media/profile_icon.c68e285d623b3772495b.png",
+    "index.html": "/deepaknetwork/wallet/index.html",
+    "main.c264c91c.css.map": "/deepaknetwork/wallet/static/css/main.c264c91c.css.map",
+    "main.8017f8b3.js.map": "/deepaknetwork/wallet/static/js/main.8017f8b3.js.map",
+    "703.b0e218fd.chunk.js.map": "/deepaknetwork/wallet/static/js/703.b0e218fd.chunk.js.map",
+    "598.7c840cac.chunk.js.map": "/deepaknetwork/wallet/static/js/598.7c840cac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c264c91c.css",
-    "static/js/main.badd0517.js"
+    "static/js/main.8017f8b3.js"
   ]
 }
