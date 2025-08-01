@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { BrowserRouter as Router,Routes,Route, Navigate} from "react-router-dom";
+import { HashRouter as Router,Routes,Route, Navigate} from "react-router-dom";
 import Home from "./pages/home";
 import Login from "./pages/login";
 import Summary from "./pages/summary";
@@ -16,11 +16,10 @@ export default function App() {
   return (
   <Router>
     <Routes>
-      {loggedin?<Route path="/wallet" element={<Navigate to="/wallet/home" replace />} />:<Route path="/wallet" element={<Login />}></Route>}
-      {loggedin&&<Route path="/wallet/home" element={<Home />}></Route>}
-      {loggedin&&<Route path="/wallet/profile" element={<Profile />}></Route>}
-      {loggedin&&<Route path="/wallet/summary" element={<Summary />}></Route>}
-      <Route path="*" element={<Navigate to="/wallet" />}></Route>
+      {loggedin?<Route path="/" element={<Home />} />:<Route path="/" element={<Login />}></Route>}
+      {loggedin&&<Route path="/profile" element={<Profile />}></Route>}
+      {loggedin&&<Route path="/summary" element={<Summary />}></Route>}
+      <Route path="*" element={<Navigate to="/" />}></Route>
     </Routes>
   </Router>
   )

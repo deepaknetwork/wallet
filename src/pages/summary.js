@@ -7,6 +7,7 @@ import html2pdf from 'html2pdf.js';
 import Pdf from "../component/pdf";
 import { useNavigate } from "react-router-dom";
 import a from '../images/download.png';
+import ItemAdd from "../component/itemadd";
 export default function Summary()
 {
 
@@ -47,7 +48,7 @@ export default function Summary()
             
         </div> */}
         {/* <div className="down" onClick={download}><img className="down_icon" src={a} alt="a"></img></div> */}
-        <table className={`summary_table ${isDarkTheme?"table":"table table-striped"}`}>
+        <table className={`summary_table ${!isDarkTheme?"table":"table table-striped"}`}>
             <thead >
                 <tr className="row summary_head ">
                     <th className="col-3 summary_head_data" >Date</th>
@@ -58,15 +59,17 @@ export default function Summary()
             </thead>
             <tbody className={`summary_body`}>
             {data.map(i=>{
+                
                 if(parseInt(month)===parseInt(parseInt(i.date.toString().split("/")[1]))){
-                    return <Item x={{data:i,new:false}}/>
+                    return i.spent=="false"?<ItemAdd x={{data:i,new:false}}/>:<Item x={{data:i,new:false}}/>
+                   
                 }else{
                     var str=i.date.toString().split("/")
                     month=parseInt(str[1])
                     return <>
-                    
-                        <tr className={`row sum_body_title table ${isDarkTheme?"table-light":"table-dark"}`}><th>{month_array[parseInt(str[1])]} {str[2]}</th></tr>
-                        <Item x={{data:i,new:true}}/></>
+                        <tr className={`row sum_body_title table ${!isDarkTheme?"table-light":"table-dark"}`}><th>{month_array[parseInt(str[1])]} {str[2]}</th></tr>
+                        {i.spent=="false"?<ItemAdd x={{data:i,new:true}}/>:<Item x={{data:i,new:true}}/>}
+                        </>
                 }
                 
             })}
